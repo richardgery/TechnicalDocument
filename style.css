@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --text-color: #4d4e53;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: #ccc;
+  }
+}
+
+html,
+body {
+  background-color: #fff;
+  color: var(--text-color);
+  min-width: 288px;
+  line-height: 1.4;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 288px;
+  height: 100%;
+  min-width: 288px;
+  border-color: rgba(0, 22, 22, 0.4);
+  border-right: solid;
+}
+
+header {
+  margin: 10px;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: thin;
+  color: #000;
+}
+
+#navbar ul {
+  padding: 0;
+  height: 86%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  position: relative;
+  width: 100%;
+  color: var(--text-color);
+  border-top: 1px solid;
+  list-style: none;
+}
+
+#navbar a {
+  display: block;
+  text-decoration: none;
+  padding: 12px 32px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+#main-doc header {
+  margin: 0;
+  text-align: left;
+}
+
+#main-doc {
+  position: absolute;
+  padding: 28px;
+  margin-left: 308px;
+  margin-bottom: 108px;
+}
+
+section article {
+  margin: 13px;
+  color: var(--text-color);
+  font-size: 0.94em;
+}
+
+section li {
+  margin: 13px 0 0 18px;
+}
+
+code {
+  position: relative;
+  display: block;
+  white-space: pre-line;
+  text-align: left;
+  word-wrap: normal;
+  word-break: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 13px;
+  margin: 8px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar {
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 273px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #navbar ul {
+    border: 1px solid;
+    height: 205px;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0;
+    margin-top: 268px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -8px;
+  }
+
+  code {
+    width: 100%;
+    margin-left: -18px;
+    padding: 13px;
+    padding-left: 8px;
+    padding-right: 43px;
+    min-width: 231px;
+  }
+}

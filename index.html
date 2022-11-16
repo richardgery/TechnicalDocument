@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
-    <title>Javascript Technical Documentation</title>
+    <title>JavaScript Documentation</title>
   </head>
   <body>
     <nav id="navbar">
       <header>JS Documentation</header>
       <ul>
-        <li><a href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
         <li>
-          <a href="#What_you_should_already_know"
+          <a class="nav-link" href="#What_you_should_already_know"
             >What you should already know</a
           >
         </li>
@@ -136,10 +136,10 @@
         <article>
           To get started with writing JavaScript, open the Scratchpad and write
           your first "Hello world" JavaScript code:
-          <code>
-            function greetMe(yourName) { alert("Hello " + yourName); }
-            greetMe("World");
-          </code>
+          <code
+            >function greetMe(yourName) { alert("Hello " + yourName); }
+            greetMe("World");</code
+          >
           Select the code in the pad and hit Ctrl+R to watch it unfold in your
           browser!
         </article>
@@ -182,7 +182,7 @@
             variant.
           </p>
           <p>
-            With the keyword let. For example,<code> let y = 13.</code> This
+            With the keyword let. For example,<code>let y = 13.</code> This
             syntax can be used to declare a block scope local variable. See
             Variable scope below.
           </p>
@@ -211,10 +211,10 @@
             This behavior changes, when using the let declaration introduced in
             ECMAScript 2015.
           </p>
-          <code>
-            if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
-            defined
-          </code>
+          <code
+            >if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+            not defined</code
+          >
         </article>
       </section>
       <section id="Global_variables" class="main-section">
@@ -225,7 +225,6 @@
             pages the global object is window, so you can set and access global
             variables using the window.variable syntax.
           </p>
-
           <p>
             Consequently, you can access global variables declared in one window
             or frame from another window or frame by specifying the window or
@@ -324,8 +323,8 @@
           <code
             >if (condition_1) { statement_1; } else if (condition_2) {
             statement_2; } else if (condition_n) { statement_n; } else {
-            statement_last; }
-          </code>
+            statement_last; }</code
+          >
           In the case of multiple conditions only the first logical condition
           which evaluates to true will be executed. To execute multiple
           statements, group them within a block statement ({ ... }) . In
